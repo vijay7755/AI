@@ -1,0 +1,23 @@
+$theme-colors: (
+  "secondary-test": #1f4287,
+  "info": #004623,
+  "primary": #ffb602,
+  "secondary": #ffedb8  
+);
+
+@import "./../../node_modules/bootstrap/scss/bootstrap";
+
+html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$aishwaryam-info-lighter: #b3c8bd;
+$aishwaryam-info: #004623;
+$aishwaryam-info-darker: #002F15;
+
+$aishwaryam-primary-lighter: #ffe9b3;
+$aishwaryam-primary: #ffb602;
+$aishwaryam-primary-darker: #ff9e01;
+
+$aishwaryam-secondary-lighter: #fffcf3;
+$aishwaryam-secondary: #ffedb8;
+$aishwaryam-secondary-darker: #ffe599;

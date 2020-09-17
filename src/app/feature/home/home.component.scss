@@ -1,0 +1,126 @@
+@import "./../../../styles/bootstrap-custom.scss";
+
+/* Banner */
+.banner {
+  padding-top: 5.1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+   url("./../../../assets/pictures/bannerDB3.jpg")
+   no-repeat center center /cover;
+   background-color: $aishwaryam-info;
+   color: $aishwaryam-primary-lighter;
+}
+.fa-adn {
+  margin-top: -2rem;
+    font-size: 275px;
+}
+.banner-text {
+    line-height: 5rem;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    letter-spacing: 5px;
+}
+.banner-img1 {
+    position: relative;
+    margin-left: 1rem;
+    margin-top: -2rem;
+    z-index: 10;
+    animation-name: animLeft;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+
+}
+.banner-img2 {
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: -11rem;
+    z-index: 1;
+    animation-name: animRight;
+    animation-duration: 2s;
+}
+
+@keyframes animLeft {
+    0%{
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes animRight {
+    0%{
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+/* End of Banner */
+
+
+/* Product-Display */
+
+/* health-mix */
+.health-mix {
+  background: linear-gradient(#004623, #004623)
+}
+.title-health-mix {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+  url("./../../../assets/pictures/healthMixGrains.JPG")
+  no-repeat center center /cover;
+  border-radius: 10px;
+}
+.title-black-urad-dal {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+  url("./../../../assets/pictures/black-textile-952670.jpg")
+  no-repeat center center /cover;
+  border-radius: 10px;
+}
+.title-multi-millet-dosa-mix {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+  url("./../../../assets/pictures/final\ sweets-2.jpg")
+  no-repeat center center /cover;
+  border-radius: 10px;
+}
+.title-wheat-puttu {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+  url("./../../../assets/pictures/abstract-ancient-antique-art-235985.jpg")
+  no-repeat center center /cover;
+  border-radius: 10px;
+}
+.title-img {
+  border-radius: 10px;
+}
+
+.underline {
+  width: 150px;
+  border: 3px solid #eee;
+  margin: auto;
+}
+
+.HM-desc-section {
+  position: relative;
+  overflow: hidden;
+  // background: url("./../../../assets/pictures/star.png")
+  // no-repeat center center /cover;
+}
+.HM-desc-section p {
+  position: relative;
+  z-index: 1;
+}
+.HM-desc-section img {
+  position: absolute;
+  left: 10;
+  top: 0;
+  width: 85%;
+  height: 80%;
+  opacity: 1;
+}
+
+/* End of health-mix */
+
+/* End of Product-Display */

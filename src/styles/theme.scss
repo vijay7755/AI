@@ -1,0 +1,122 @@
+// Custom theme
+@import "~@angular/material/theming";
+@include mat-core();
+
+/* For use in src/lib/core/theming/_palette.scss */
+$aishwaryam-app-primary: (
+    50 : #e0e9e5,
+    100 : #b3c8bd,
+    200 : #80a391,
+    300 : #4d7e65,
+    400 : #266244,
+    500 : #004623,
+    600 : #003f1f,
+    700 : #00371a,
+    800 : #002f15,
+    900 : #00200c,
+    A100 : #5dff7f,
+    A200 : #2aff57,
+    A400 : #00f634,
+    A700 : #00dc2e,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$aishwaryam-app-accent: (
+    50 : #fff6e1,
+    100 : #ffe9b3,
+    200 : #ffdb81,
+    300 : #ffcc4e,
+    400 : #ffc128,
+    500 : #ffb602,
+    600 : #ffaf02,
+    700 : #ffa601,
+    800 : #ff9e01,
+    900 : #ff8e01,
+    A100 : #ffffff,
+    A200 : #fff9f2,
+    A400 : #ffe0bf,
+    A700 : #ffd3a6,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$aishwaryam-app-warn: (
+    50 : #fffcf3,
+    100 : #fff7e0,
+    200 : #fff2cc,
+    300 : #ffedb8,
+    400 : #ffe9a8,
+    500 : #ffe599,
+    600 : #ffe291,
+    700 : #ffde86,
+    800 : #ffda7c,
+    900 : #ffd36b,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #fffbf3,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$aishwaryam-app-primary: mat-palette($aishwaryam-app-primary, 500, 100, 800);
+$aishwaryam-app-accent: mat-palette($aishwaryam-app-accent, 500, 100, 800);
+$aishwaryam-app-warn: mat-palette($aishwaryam-app-warn, 300, 50, 500);
+
+$aishwaryam-app-theme: mat-light-theme($aishwaryam-app-primary, $aishwaryam-app-accent, $aishwaryam-app-warn);
+
+@include angular-material-theme($aishwaryam-app-theme);
+
+// custom typhograpy
+    // $body-1: mat-typography-level(16px, 24px, 500)
+// $headline: mat-typography-level(32px, 48px, 700),
+
+// $custom-typography: mat-typography-config(
+//     $font-family: '"Roboto", sans-serif',
+
+// );
+
+// @include angular-material-typography($custom-typography);

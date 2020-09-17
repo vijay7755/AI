@@ -1,0 +1,20 @@
+<div class="top">
+    <h1 class="bg-secondary-test text-white pb-3" #parentRef>products</h1>
+    <!-- <input type="text" #parentRef class="form-control"> -->
+</div>
+<div>
+    <!-- <app-product-child [title] = title>
+        <h3 class="text-danger display-3 body">Body1 Content</h3>
+        <p class="text-primary body">Footer1 Content</p>
+        <p class="text-primary footer">Footer1 Content</p>
+    </app-product-child> -->
+    
+    <app-product-child [title] = title>
+        <div class="body">
+            <app-product-sub></app-product-sub>
+            <h3 #ParentcontentRef class="text-danger display-3">Body2 Content</h3>
+        </div>
+        <p class="text-primary footer">Footer2 Content</p>
+    </app-product-child>
+</div>
+
